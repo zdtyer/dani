@@ -1,8 +1,8 @@
 #!/bin/sh
 
-PORT=80
-UUID=5aaed9b7-7fe3-47c3-bb52-db59859ce198
-WebPage=https://bing.com
+PORT=8080
+UUID=f2589ee6-4dfc-11ed-bdc3-0242ac120002  
+WebPage=https://github.com/flexdinesh/dev-landing-page/archive/master.zip
 CaddyConfig=https://raw.githubusercontent.com/bsefwe/Rail/main/etc/Caddyfile
 XRayConfig=https://raw.githubusercontent.com/bsefwe/Rail/main/etc/xray.json
 Xray_Newv=`wget --no-check-certificate -qO- https://api.github.com/repos/XTLS/Xray-core/tags | grep 'name' | cut -d\" -f4 | head -1 | cut -b 2-`
